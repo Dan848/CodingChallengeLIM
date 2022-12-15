@@ -1,0 +1,100 @@
+/*
+PALETTE 
+orange bar: #f5b453;
+green bar: #1ec31e;
+red bar: #be4141;
+*/
+
+
+/* Reset del CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url("images/background.jpg") no-repeat top left fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Dando una larghezza in percentuale al container si ridimensionerà a seconda della grandezza della finestra*/
+.container {
+    width: 65%;   
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1% auto auto auto;      
+    border-radius: 10px;
+    padding: 5%;
+}
+
+header {
+    color: rgb(0, 255, 0);
+    text-align: center;
+}
+
+.logo {
+    height: 120px;
+}
+
+.button-section {
+    background-color: rgb(0, 255, 0);
+    padding: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*Reimposto il padding di Default dei button*/
+button {
+    padding: 1px 6px;
+}
+
+.scooter {
+    margin-top: 20px;
+    color: white;
+}
+
+/*Reimposto i margini di Default del checkbox*/
+.box {
+    margin: 3px 10px 3px 4px;
+}
+
+.scooter-name {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.scooter-info {
+    font-weight: 300;
+}
+
+.arrow {
+    margin-right: 3px;
+}
+
+/*Entity*/
+.arrow::before {
+    content: "\21A6";
+}
+
+/*Do un altezza fissa a tutte le barre stondando i bordi...*/
+.charge-bar {
+    height: 30px;
+    border-radius: 5px;
+}
+
+/*...e imposto colore e larghezza singolarmente*/
+.charge-bar.orange {
+    width: 35%;
+    background-color: #f5b453;
+}
+
+.charge-bar.green {
+    width: 60%;
+    background-color: #1ec31e;
+}
+
+.charge-bar.red {
+    width: 15%;
+    background-color: #be4141;
+}
